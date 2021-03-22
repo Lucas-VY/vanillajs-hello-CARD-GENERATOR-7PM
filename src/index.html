@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Card generator.js</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -11,24 +11,27 @@
       crossorigin="anonymous"
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./4geeks.ico" />
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
     <div class="container-fluid text-center"> 
       <div class="card">
-        <span id="the-symbols" class="top-symbol display-1">♥</span>
-        <span id="the-numbers" class="middle-number">8</span>
-        <span id="the-symbols" class="bottom-symbol display-1">♥</span>
+        <div id="symbol1" class="top symbol display-1">♥</div>
+        <div id="the-numbers" class="middle-number">8</div>
+        <div id="symbol2" class="bottom symbol display-1">♥</div>
       </div>
 
+      <div class="click"><!-- button -->
+        <button class="btn" onClick="window.location.reload()">Generate New Card</button>
+      </div>
       
       <div class="fixed-bottom p-4"> <!-- mensaje al final -->
         Made with ❤️ by Lucas
       </div>
     </div>
 
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
